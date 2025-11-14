@@ -1,0 +1,12 @@
+_base_ = './tood_x101-64x4d_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py'
+
+model = dict(
+    backbone=dict(
+        dcn=dict(type='DCNv2', deformable_groups=1, fallback_on_stride=False),
+        stage_with_dcn=(False, False, True, True),
+    ),
+    bbox_head=dict(num_dcn=2))
+
+train_dataloader = dict(
+    batch_size=1,
+    num_workers=8)
