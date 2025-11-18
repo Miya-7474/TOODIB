@@ -6,6 +6,7 @@
 | TOODIB  | ResNet-101            | 47.6 |   65.1    |   51.9    |   28.9   |   50.8   |   58.5   |          [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_r101_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py)          |
 | TOODIB  | ResNeXt-101-64×4d     | 49.0 |   66.4    |   53.4    |   31.0   |   52.3   |   59.7   |       [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py)       |
 | TOODIB  | ResNeXt-101-64×4d-DCN | 50.6 |   68.4    |   55.0    |   31.8   |   53.9   |   63.4   | [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d-dconv-c4-c5_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py) |
+
 The weights of TOODIB can be found at [releases](https://github.com/Miya-7474/TOODIB/releases/tag/v1.0.0).
 
 ## 🔧Installation
@@ -89,5 +90,6 @@ url = {https://www.sciencedirect.com/science/article/pii/S1077314225002905},
 author = {Simin Chen and Qinxia Hu and Mingjin Zhu and Qiming Wu and Xiao Hu},
 
 ```****
+
 
 
