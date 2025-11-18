@@ -1,13 +1,13 @@
-# TOODIB
+****# TOODIB
 TOODIB: Task-aligned one-stage object detection with interactions between branches
 
-| Model   | backbone              | mAP  | AP<sub>50 | AP<sub>75 | AP<sub>S | AP<sub>M | AP<sub>L |                                                                                                                                                  Download                                                                                                                                                   |
-|---------|-----------------------|:----:|:---------:|:---------:|:--------:|:--------:|:--------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| TOODIB  | ResNet-50             | 43.3 |   59.6    |   47.2    |   25.4   |   46.1   |   57.2   |                                                                                            [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_r50_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_1x_coco.py) / [checkpoint]()                                                                                 |
-| TOODIB  | ResNet-101            | 47.6 |   65.1    |   51.9    |   28.9   |   50.8   |   58.5   |                                                                          [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_r101_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py) / [checkpoint]()                                                                          |
-| TOODIB  | ResNeXt-101-64×4d     | 49.0 |   66.4    |   53.4    |   31.0   |   52.3   |   59.7   |                                                                       [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py) / [checkpoint]()                                                                       |
-| TOODIB  | ResNeXt-101-64×4d-DCN | 50.6 |   68.4    |   55.0    |   31.8   |   53.9   |   63.4   |                                                                 [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d-dconv-c4-c5_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py) / [checkpoint]()                                                                 |
-
+| Model   | backbone              | mAP  | AP<sub>50 | AP<sub>75 | AP<sub>S | AP<sub>M | AP<sub>L |                                                                config                                                                 |
+|---------|-----------------------|:----:|:---------:|:---------:|:--------:|:--------:|:--------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
+| TOODIB  | ResNet-50             | 43.3 |   59.6    |   47.2    |   25.4   |   46.1   |   57.2   |            [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_r50_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_1x_coco.py)            |
+| TOODIB  | ResNet-101            | 47.6 |   65.1    |   51.9    |   28.9   |   50.8   |   58.5   |          [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_r101_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py)          |
+| TOODIB  | ResNeXt-101-64×4d     | 49.0 |   66.4    |   53.4    |   31.0   |   52.3   |   59.7   |       [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py)       |
+| TOODIB  | ResNeXt-101-64×4d-DCN | 50.6 |   68.4    |   55.0    |   31.8   |   53.9   |   63.4   | [config](configs/toodib_DCNv2_4_coordatt_20_ti_10/tood_x101-64x4d-dconv-c4-c5_fpn_DCNv2_4_coodatt_20_ti_10_alpha1beta6_ms-2x_coco.py) |
+The weights of TOODIB can be found at [releases](https://github.com/Miya-7474/TOODIB/releases/tag/v1.0.0).
 
 ## 🔧Installation
 
@@ -19,7 +19,7 @@ TOODIB: Task-aligned one-stage object detection with interactions between branch
     ```
 
 2. Create a conda environment and activate it:
-
+1. [x] 
     ```shell
     conda create -n toodib python=3.8
     conda activate toodib
@@ -47,7 +47,7 @@ Please download [COCO 2017](https://cocodataset.org/) or prepare your own datase
 
 ```shell
 data/    
-  ├──coco/
+├──coco/
       ├── train2017/
       ├── val2017/
       └── annotations/
@@ -66,9 +66,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 ./tools/dist_train.sh /configs/toodib_DC
 
 
 ## 📈Evaluation/Test
-To evaluate a model with one or more GPUs, specify `CUDA_VISIBLE_DEVICES`, `model`, `checkpoint`, `gpu_num`.
+To evaluate a model with one or more GPUs, specify `CUDA_VISIBLE_DEVICES`, `model`, `checkpoint`.
 ```shell
-CUDA_VISIBLE_DEVICES=<gpu_ids> ./tools/dist_test.sh /path/to/model.py /path/to/checkpoint.pth gpu_num
+CUDA_VISIBLE_DEVICES=<gpu_ids> python ./tools/test.py /path/to/model.py /path/to/checkpoint.pth
 ```
 
 
@@ -89,6 +89,5 @@ doi = {https://doi.org/10.1016/j.cviu.2025.104567},
 url = {https://www.sciencedirect.com/science/article/pii/S1077314225002905},
 author = {Simin Chen and Qinxia Hu and Mingjin Zhu and Qiming Wu and Xiao Hu},
 
-```
-
+```****
 
