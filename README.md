@@ -19,7 +19,7 @@ The weights of TOODIB can be found at [releases](https://github.com/Miya-7474/TO
     ```
 
 2. Create a conda environment and activate it:
-1. [x] 
+
     ```shell
     conda create -n toodib python=3.8
     conda activate toodib
@@ -88,8 +88,9 @@ issn = {1077-3142},
 doi = {https://doi.org/10.1016/j.cviu.2025.104567},
 url = {https://www.sciencedirect.com/science/article/pii/S1077314225002905},
 author = {Simin Chen and Qinxia Hu and Mingjin Zhu and Qiming Wu and Xiao Hu},
+}
+```
 
-```****
 
 
 
