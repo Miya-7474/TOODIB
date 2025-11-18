@@ -1,5 +1,4 @@
-****# TOODIB
-TOODIB: Task-aligned one-stage object detection with interactions between branches
+# TOODIB: Task-aligned one-stage object detection with interactions between branches
 
 | Model   | backbone              | mAP  | AP<sub>50 | AP<sub>75 | AP<sub>S | AP<sub>M | AP<sub>L |                                                                config                                                                 |
 |---------|-----------------------|:----:|:---------:|:---------:|:--------:|:--------:|:--------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
@@ -90,4 +89,5 @@ url = {https://www.sciencedirect.com/science/article/pii/S1077314225002905},
 author = {Simin Chen and Qinxia Hu and Mingjin Zhu and Qiming Wu and Xiao Hu},
 
 ```****
+
 
