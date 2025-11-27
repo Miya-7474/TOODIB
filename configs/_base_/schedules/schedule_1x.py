@@ -19,10 +19,11 @@ param_scheduler = [
 # optimizer
 optim_wrapper = dict(
     type='OptimWrapper',
-    optimizer=dict(type='AdamW', lr=0.000025, weight_decay=0.0001))
+    optimizer=dict(type='AdamW', lr=0.0001, weight_decay=0.0001))
 
 # Default setting for scaling LR automatically
 #   - `enable` means enable scaling LR automatically
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (2 samples per GPU).
 auto_scale_lr = dict(enable=False, base_batch_size=16)
+
