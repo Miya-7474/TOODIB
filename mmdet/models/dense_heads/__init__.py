@@ -54,6 +54,7 @@ from .yolof_head import YOLOFHead
 from .yolox_head import YOLOXHead
 from .tood_coordatt_20_ti_10_head import TOOD_COORDATT_20_TI_10_Head
 from .tood_coordatt_20_ti_40_head import TOOD_COORDATT_20_TI_40_Head
+from .tood_coordatt_20_ti_10_head_test import TOOD_COORDATT_20_TI_10_Head_test
 
 __all__ = [
     'AnchorFreeHead', 'AnchorHead', 'GuidedAnchorHead', 'FeatureAdaption',
@@ -72,4 +73,6 @@ __all__ = [
     'BoxInstBboxHead', 'BoxInstMaskHead', 'ConditionalDETRHead', 'DINOHead',
     'ATSSVLFusionHead', 'DABDETRHead', 'DDQDETRHead', 'GroundingDINOHead',
     'TOOD_COORDATT_20_TI_10_Head', 'TOOD_COORDATT_20_TI_40_Head',
+    'TOOD_COORDATT_20_TI_10_Head_test',
 ]
+
